@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: 0;
+}
+@font-face {
+    font-family: Lexend_Deca ;
+    src: url(../fonts/LexendDeca-ExtraLight.ttf);
+}
+@font-face {
+    font-family:Big_Shoulders_Display ;
+    src: url(../fonts/BigShouldersDisplay-Bold.ttf);
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.main-container{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    
+}
+
+.container{
+    width: 1000px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+
+}
+
+.container-left {
+    height: 100%;
+    padding: 2rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   background-color: hsl(31, 77%, 52%);
+}
+
+.container-middle{
+    height: 100%;
+    padding: 2rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.container-right{
+    height: 100%;
+    padding: 2rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+
+p img {
+    width:27%;
+}
+
+h1{
+    font-family: Big_Shoulders_Display;
+    text-transform: uppercase;
+    color:hsl(0, 0%, 95%);
+}
+
+.left-text,.middle-text,.right-text{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend_Deca;
+    line-height: 20px;
+    font-size: 12px;
+    position: relative;
+    top:-16px;
+}
+
+.left-button button{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline-color: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    top:15px;
+    color:  hsl(31, 77%, 52%);
+    font-family: Lexend_Deca;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.middle-button button{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline-color: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    top:15px;
+    color:hsl(184, 100%, 22%);
+    font-family: Lexend_Deca;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.right-button button{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline-color: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    top:15px;
+    color: hsl(179, 100%, 13%);
+    font-family: Lexend_Deca;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.left-button button:hover{
+    background-color:  hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%); 
+}
+
+.middle-button button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%); 
+}
+
+.right-button button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%); 
+}
+
+@media (max-width: 599px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        height: 1000px;
+        width: 300px;
+    }
+    .container-left{
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0px;
+        width:60%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .container-middle{
+        width:60%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+     .container-right{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        width:60%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
